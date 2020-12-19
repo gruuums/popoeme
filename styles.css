@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+
+* {
+  font-family: Dancing script;
+}
+
+html {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+h1 {
+  -webkit-animation: text-focus-in 1s 1s ease both;
+  animation: text-focus-in 1s 1s ease both;
+  font-size: 10vw;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+p {
+  font-size: 7vw;
+}
+.p1 {
+  -webkit-animation: text-focus-in 2s 2s ease both;
+  animation: text-focus-in 2s 2s ease both;
+}
+
+.p2 {
+  -webkit-animation: text-focus-in 2s 5s ease both;
+  animation: text-focus-in 2s 5s ease both;
+}
+
+.p3 {
+  -webkit-animation: text-focus-in 2s 8s ease both;
+  animation: text-focus-in 2s 8s ease both;
+}
+.p4 {
+  -webkit-animation: text-focus-in 2s 11s ease both;
+  animation: text-focus-in 2s 11s ease both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
