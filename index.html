@@ -7,32 +7,53 @@
 </head>
 
 <body>
-	<h1>Pauline,</h1>
+	<h1 class="ml3">Pauline,</h1>
 	<div id="texte">
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 	<script>
 		id = document.getElementById("texte");
-var vers = ['	<p class="p1">J\'attends tous les jours tes messages<br>'];
+var vers = ['<p>','J\'attends tous les jours tes messages<br>'];
 vers.push('Chaque jour je compte les heures<br>');
 vers.push('		Pour des coucou ou des massages<br>');
-vers.push('		Chaque heure tu réchauffes mon coeur.</p>');
+vers.push('		Chaque heure tu réchauffes mon coeur.','</p>');
 
-vers.push('		<p class="p2">J\'attends le weekend toute la semaine<br>');
+vers.push('<p>','J\'attends le weekend toute la semaine<br>');
 vers.push('		Car tu es ma thérapie quotidienne<br>');
 vers.push('		Quand je pense à toi et à ton corps<br>');
-vers.push('		Je me dis que c\'est bien toi que j\'adore.</p>');
+vers.push('		Je me dis que c\'est bien toi que j\'adore.','</p>');
 
-vers.push('			<p class="p3">J\'aimerais tellement t\'avoir près de moi<br>');
+vers.push('<p>','J\'aimerais tellement t\'avoir près de moi<br>');
 vers.push('		Que tu me remplisses d\'émoi<br>');
 vers.push('		Chill avec du jazz en musique<br>');
 vers.push('		Nos corps chanterions en chœur<br>');
 vers.push('		Et je voudrais que dans ton cœur<br>');
-
+vers.push('		Résonnent mes 3 mots magiques.','</p>');
 var html = "";
-for (var i = 0; i < vers.length; i++) {
-	html += vers[i];
+var animation = 1;
+for (var i = 0; i < vers.length; ++i) {
+  if (vers[i] == '<p>'  || vers[i] == '</p>') {
+    html += vers[i];
+  } else {
+    html += '<span class ="vers" style="  -webkit-animation: text-focus-in 2s'+animation*2+'s ease both;animation: text-focus-in 2s '+animation*2+'s ease both;">';
+    html += vers[i];
+    html += '</span>';
+    animation++;
+  }
 }
 texte.innerHTML = html;
+/*
+var textWrapper = document.querySelector('.ml3');
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+anime.timeline({loop: false})
+  .add({
+    targets: '.ml3 .letter',
+    opacity: [0,1],
+    easing: "easeInOutQuad",
+    duration: 2250,
+    delay: (el, i) => 150 * (i+1)
+  });*/
 	</script>
 	<p class="p4">
 		Guillaume :)
