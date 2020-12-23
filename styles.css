@@ -11,8 +11,8 @@ html {
 }
 
 h1 {
-  -webkit-animation: text-focus-in 1s 1s ease both;
-  animation: text-focus-in 1s 1s ease both;
+  -webkit-animation: text-focus-in 1s 2s ease both;
+  animation: text-focus-in 1s 2s ease both;
   font-size: 10vw;
   background-color: #4158d0;
   background-image: linear-gradient(
@@ -28,20 +28,7 @@ h1 {
 p {
   font-size: 5vw;
 }
-.p1 {
-  -webkit-animation: text-focus-in 2s 2s ease both;
-  animation: text-focus-in 2s 2s ease both;
-}
 
-.p2 {
-  -webkit-animation: text-focus-in 2s 5s ease both;
-  animation: text-focus-in 2s 5s ease both;
-}
-
-.p3 {
-  -webkit-animation: text-focus-in 2s 8s ease both;
-  animation: text-focus-in 2s 8s ease both;
-}
 .p4 {
   -webkit-animation: text-focus-in 2s 30s ease both;
   animation: text-focus-in 2s 30s ease both;
