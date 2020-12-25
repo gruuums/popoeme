@@ -30,8 +30,8 @@ p {
 }
 
 .p4 {
-  -webkit-animation: text-focus-in 2s 30s ease both;
-  animation: text-focus-in 2s 30s ease both;
+  -webkit-animation: text-focus-in 2s 32s ease both;
+  animation: text-focus-in 2s 32s ease both;
 }
 
 @-webkit-keyframes text-focus-in {
